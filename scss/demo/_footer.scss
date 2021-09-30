@@ -1,0 +1,64 @@
+
+/* ----------------------------------------------------------------
+
+	footer.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for footer. Thanks!
+-----------------------------------------------------------------*/
+
+#footer {
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 4.825rem;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(90deg, rgba(247,240,246,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 67%, rgba(237,242,246,1) 100%)
+	}
+
+	hr {
+		background-color: #5c5b59;
+		margin: 2.5rem 0;
+	}
+
+	.form-control {
+		border-width: 0!important;
+  	}
+
+	.divide-line {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			border-left: 1px solid #f0edf3;
+			display: block;
+			height: 100%;
+			left: 50%;
+
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+		}
+	}	
+}
+
+#copyrights {
+	color: #bcbcca;
+	font-size: $font-size-base;
+	font-weight: 350;	
+	z-index: 1;	
+}

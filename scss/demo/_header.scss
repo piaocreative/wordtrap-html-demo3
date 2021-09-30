@@ -1,0 +1,257 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+
+	// Transparent header
+	&.transparent-header {
+		background: transparent;
+		z-index: 199;
+
+		& + #banner {
+			top: -$header-height;
+			margin-bottom: -$header-height;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+#header-wrap {
+	margin-left: 4.687rem;
+	margin-right: 3.98rem;
+}
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	margin-right: 0;
+
+	img {
+		margin-top: 1.828rem;
+		margin-bottom: 2.25rem;
+		margin-right: 3.5rem;
+		width: 6.56rem;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $primary-menu-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
+	
+		@include media-breakpoint-up(xl) {
+			line-height: 1;
+			padding: $primary-menu-padding 1.34rem;
+		}
+	}
+
+	.nav-item {
+		&.current,
+		&:hover {
+			color: #acb0d5;
+
+			a {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+#top-btns {
+
+	.nav-item {
+		padding: 0 0.82rem;
+
+		@include media-breakpoint-down(xl) {
+			padding-bottom: 2rem;
+			padding-left: 0;
+		}
+
+		.nav-link {
+			padding: 0px;
+			color: $top-btn-font-color;
+			font-size: $top-btn-font-size;
+			line-height: 1;
+
+			&:hover {
+				color: $theme-color;
+			}
+			i {
+				font-size: $h3-font-size;
+			}
+		}
+		
+		.phone-number {
+			font-size: 1rem;
+			font-weight: 700;
+			margin-right: 2rem;
+			margin-top: 0.3rem;
+			margin-bottom: 0;
+			
+			@include media-breakpoint-down(xxl) {
+				margin-right: 0;
+			}
+		}
+
+		span {
+			font-size: 0.7rem;
+		}
+
+		.cart-count {
+			color: $topbar-color;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+#top-links {
+	.nav-item {			
+		@include media-breakpoint-up(xl) {
+			padding-right: 1.875rem;		
+		}
+	}
+
+	a.nav-link {
+		color: $topbar-color;
+		display: block;
+		font-size: 0.75rem;	
+		
+		@include media-breakpoint-up(xl) {
+			padding: 0;		
+		}
+
+		&:hover {
+			color: $topbar-hover-color;
+		}
+	}
+
+	.dropdown-toggle {
+		&::after {
+			margin-left: .75em;
+		}
+	}
+
+	.dropdown-menu {
+		background: $white;
+		border: 0;
+		top: $topbar-line-height;
+		left: 0;
+		width: 100%;		
+		margin: 0;
+		border-top: 3px solid $theme-color;
+		@include border-radius(0);
+		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
+
+		@include media-breakpoint-up(xl) {
+			width: 8.75rem;
+		}
+
+		a.dropdown-item {
+			color: $heading-color;
+			height: 2.25rem;
+			line-height: 2.25rem;
+			font-size: 0.75rem;				
+			padding: 0 0.75rem;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		img {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			width: 1rem;
+			height: 1rem;
+			margin-right: $spacer / 4;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+#banner {
+    background-image: url(../images/banner/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 50%;
+
+    h2 {
+        color: $theme-color;
+        font-style: italic;
+    }
+
+    button {
+        position: absolute;
+        bottom: 27%;
+        left: 20%;
+    }
+
+}
+
+.banner-infos-wrapper {
+	position: relative;
+
+    .banner-social {
+        display: flex;
+
+        ul {
+            display: flex;
+        }
+    
+        li {
+            padding: 1rem 0;
+    
+            a {
+                background-color: white;
+                border-radius: 50%;
+                color: #e9e0e9;
+                display: inline-block;
+                line-height: 1.8125rem;
+                width: 1.8125rem;
+                height: 1.8125rem;		
+                vertical-align: middle;
+                text-align: center;
+    
+                &:hover {
+                    color:white;
+                    background-color: #e9e0e9;
+                    @include transition(all 0.3s ease-in-out);
+                }
+    
+                i {
+                    vertical-align: top;
+                    line-height: 1.8125rem;
+                }
+            }
+        }
+    }
+
+	.banner-infos {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: -18rem;
+        left: -8rem;
+        width: fit-content;
+        transform: rotate(-90deg);
+
+        p {
+            color: #d1b8d1;
+            font-size: 0.75rem;
+        }
+
+        hr {
+            width: 4rem;
+            color: #d1b8d1;
+            margin-left: 1.5rem;
+        }
+
+        a {
+            transform: rotate(90deg);
+        }
+
+        @include media-breakpoint-down(xl) {
+            left: -3rem;
+            top: -12rem;
+
+            p {
+                display: none;
+            }
+
+            hr {
+                display: none;
+            }
+        }
+    }
+
+    a {
+        color: $topbar-color;
+        margin-left: 1.3rem;
+
+        &:hover {
+            color: $topbar-hover-color;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.main-section {
+	margin-top: 5rem;
+	margin-bottom: 7.82rem;
+
+	img {
+		margin-bottom: 2.53rem;
+		padding-right: 6.65rem;
+
+		@include media-breakpoint-down(lg) {
+			padding-right: 0;
+		}
+	}
+}
+
+.useful-menu {
+  margin-top: 4rem;
+
+  a {
+    font-size: $h4-font-size;
+    color: $top-btn-font-color;
+    font-weight: 350;
+
+    &:hover {
+      color: #acb0d5;
+	  @include transition(all 0.3s ease-in-out);
+    }
+  }
+}
+
+.dot-line {
+	border-bottom: 0.2px dotted;
+	color: inherit;
+	opacity: 0.3;
+}
