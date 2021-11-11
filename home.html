@@ -44,7 +44,7 @@
   
           <nav class="navbar navbar-expand-xl navbar-light py-0">
   
-            <div class="container-fluid px-0">
+            <div class="container-fluid">
   
               <!-- Logo
               ============================================= -->
@@ -89,7 +89,7 @@
                 ============================================= -->
                 <nav id="primary-menu" class="me-auto">
   
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav gap-3">
                       <li class="current nav-item">
                           <a href="#" class="nav-link">Home</a>
                       </li>                                  
@@ -152,56 +152,28 @@
 
       <!-- Banner
       ============================================= -->
-      <section id="banner" class="section-margin-top">
-
-          <div class="container-fluid">
-
-            <img src="./images/banner/banner_bg.png" alt="banner" class="img-fluid">
-
-            <div class="banner-infos-wrapper d-flex flex-column">
-              <div class="banner-infos">
-                <div class="banner-social">
-                  <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  </ul>
-                </div>
-                <p class="text-uppercase mb-0 ms-4">
-                  we are socialwebsite
-                </p>
-              </div>
-            </div><!-- .banner-infos -->
-            
-            <button class="addbag text-uppercase rounded-pill text-uppercase">shop now</button>
-
-          </div>
-    
+      <section class="banner">
+        <img src="./images/banner/banner_bg.png" alt="banner" class="img-full">
       </section><!-- #banner -->
   
       <!-- Content
       ============================================= -->
-      <section id="content">
-
-        <div class="content-wrap">           
+      <section id="content">        
           
           <!-- Product Categories
           ============================================= -->
-          <div class="container">
+          <div class="section">
+          
+              <div class="container">
 
+                <div class="heading-block text-lg-center">
+                  <img src="./images/title-img.png" class="mb-3 title-img">
+                  <h2 class="title mb-0">Categories</h2>
+                </div>
 
-            <div class="container section-padding-top">
+                <div class="row">
 
-              <div class="heading-block">
-                <img src="./images/title-img.png" class="mb-3 title-img">
-                <h2 class="title">Categories</h2>
-              </div>
-
-              <div class="row">
-
-                <div class="col-12">
-
-                  <div class="categories d-flex justify-content-evenly flex-wrap">
+                  <div class="col-lg">
 
                     <div class="category">
                       <a href="#">
@@ -209,36 +181,47 @@
                           <img src="images/shop/category1.png" alt="Category Image">
                         </div>
                       </a>
-                      <div class="category-desc text-center">
+                      <div class="category-details text-center">
                         <a href="#"><h3 class="category-title">A-silhouette</h3></a>
                         <div class="category-products-count">3 495 goods</div>
                       </div>
                     </div>
+                    
+                  </div>
 
+                  <div class="col-lg">
+                    
                     <div class="category">
                       <a href="#">
                         <div class="category-image">
                           <img src="images/shop/category2.png" alt="Category Image">
                         </div>
                       </a>
-                      <div class="category-desc text-center">
+                      <div class="category-details text-center">
                         <a href="#"><h3 class="category-title">Mermaid dresses</h3></a>
                         <div class="category-products-count">3 495 goods</div>
                       </div>
                     </div>
-                  
+
+                  </div>
+
+                  <div class="col-lg">
+
                     <div class="category">
                       <div class="category-image">
                         <a href="#">
-                          <img src="images/shop/category2.png" alt="Category Image" class="hover-disable">
-                          <img src="images/shop/category3.png" alt="Category Image" class="hover-visible">
+                          <img src="images/shop/category3.png" alt="Category Image">
                         </a>
                       </div>
-                      <div class="category-desc text-center">
+                      <div class="category-details text-center">
                         <a href="#"><h3 class="category-title">Flutty dress</h3></a>
-                        <div class="category-products-count">3 495 goods</div>
+                        <div class="category-info">3 495 goods</div>
                       </div>
                     </div>
+
+                  </div>
+
+                  <div class="col-lg">
 
                     <div class="category">
                       <div class="category-image">
@@ -246,24 +229,207 @@
                           <img src="images/shop/category4.png" alt="Category Image">
                         </a>
                       </div>
-                      <div class="category-desc text-center">
+                      <div class="category-details text-center">
                         <a href="#"><h3 class="category-title">Straight dress</h3></a>
-                        <div class="category-products-count">3 495 goods</div>
+                        <div class="category-info">3 495 goods</div>
                       </div>
                     </div>
 
+                  </div>
+
+                  <div class="col-lg">
                     <div class="category">
                       <div class="category-image">
                         <a href="#">
                           <img src="images/shop/category5.png" alt="Category Image">
                         </a>
                       </div>
-                      <div class="category-desc text-center">
+                      <div class="category-details text-center">
                         <a href="#"><h3 class="category-title">short dress</h3></a>
-                        <div class="category-products-count">3 495 goods</div>
+                        <div class="category-info">3 495 goods</div>
                       </div>
                     </div>
+                  </div>
 
+                </div>
+
+            </div>
+
+          </div><!-- #product_categories -->  
+
+          <!-- Featured Products
+          ============================================= -->
+          <div class="section pt-0">
+
+            <div class="container-fluid px-5">
+  
+              <div class="heading-block text-lg-center">
+                <img src="./images/title-img.png" class="mb-3 title-img">
+                <h2 class="title mb-0">Featured dresses</h2>
+              </div>
+
+              <div class="row">
+
+                <div class="col-sm-6 col-lg-4 col-xxl-2">
+
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"><img src="./images/shop/featured_product1.png" alt="Product Image" class="img-fluid"></a>
+                      <a class="add-to-wishlist"><i class="far fa-heart white"></i></a>
+                    </div>  
+                    <div class="product-details">
+                      <div class="product-info ">
+                        <a href="#"><h3 class="product-title">Dress</h3></a>
+                      </div> 
+                      <div class="product-price ">$1,500</div>  
+                      <div class="d-flex mt-n4 align-items-end justify-content-between">
+                        <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                        </div> 
+                        <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xxl-2">
+
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"><img src="./images/shop/featured_product2.png" alt="Product Image" class="img-fluid"></a>
+                      <a href="#" class="add-to-wishlist">
+                        <i class="far fa-heart white"></i>
+                      </a>
+                    </div>  
+                    <div class="product-details">
+                      <div class="product-info ">
+                        <a href="#"><h3 class="product-title">Dress</h3></a>
+                      </div> 
+                      <div class="product-price ">$1,500</div>  
+                      <div class="d-flex mt-n4 align-items-end justify-content-between">
+                        <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                        </div> 
+                        <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xxl-2">
+
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"><img src="./images/shop/featured_product3.png" alt="Product Image" class="img-fluid"></a>
+                      <a href="#" class="add-to-wishlist"><i class="far fa-heart white"></i> </a>
+                    </div>  
+                    <div class="product-details">
+                      <div class="product-info ">
+                        <a href="#"><h3 class="product-title">Dress</h3></a>
+                      </div> 
+                      <div class="product-price ">$1,500</div>  
+                      <div class="d-flex mt-n4 align-items-end justify-content-between">
+                        <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                        </div> 
+                        <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xxl-2">
+
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"><img src="./images/shop/featured_product4.png" alt="Product Image" class="img-fluid"></a>
+                      <a href="#" class="add-to-wishlist"> <i class="far fa-heart white"></i> </a>
+                    </div>  
+                    <div class="product-details">
+                      <div class="product-info ">
+                        <a href="#"><h3 class="product-title">Dress</h3></a>
+                      </div> 
+                      <div class="product-price ">$1,500</div>  
+                      <div class="d-flex mt-n4 align-items-end justify-content-between">
+                        <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                        </div> 
+                        <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xxl-2">
+
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"><img src="./images/shop/featured_product5.png" alt="Product Image" class="img-fluid"></a>
+                      <a href="#" class="add-to-wishlist"><i class="far fa-heart white"></i></a>
+                    </div>  
+                    <div class="product-details">
+                      <div class="product-info ">
+                        <a href="#"><h3 class="product-title">Dress</h3></a>
+                      </div> 
+                      <div class="product-price ">$1,500</div>  
+                      <div class="d-flex mt-n4 align-items-end justify-content-between">
+                        <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                        </div> 
+                        <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+                
+                <div class="col-sm-6 col-lg-4 col-xxl-2">
+
+                  <div class="product">
+                    <div class="product-image">
+                      <a href="#"><img src="./images/shop/featured_product6.png" alt="Product Image" class="img-fluid"></a>
+                      <a href="#" class="add-to-wishlist"><i class="far fa-heart white"></i></a>
+                    </div>  
+                    <div class="product-details">
+                      <div class="product-info ">
+                        <a href="#"><h3 class="product-title">Dress</h3></a>
+                      </div> 
+                      <div class="product-price ">$1,500</div>  
+                      <div class="d-flex mt-n4 align-items-end justify-content-between">
+                        <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star empty"></i>
+                        </div> 
+                        <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                      </div>
+                    </div>  
                   </div>
 
                 </div>
@@ -272,449 +438,241 @@
 
             </div>
 
-          </div>
-          <!-- #product_categories -->  
-
-          <!-- Featured Products
-          ============================================= -->
-          <div class="container-fluid">
-            <div id="featured_products" class="section-padding-bottom">
-
-              <div class="heading-block text-center">
-                <img src="./images/title-img.png" class="mb-3 title-img">
-                <h2 class="title ">Featured dresses</h2>
-              </div>
-
-              <div class="row">
-
-                <div class="col-sm-6 col-lg-4 col-xxl-2">
-                  <div class="product">
-
-                      <div class="product-image">
-                        <a href="#"><img src="./images/shop/featured_product1.png" alt="Product Image" class="img-fluid"></a>
-                        <a href="#"><img src="./images/shop/featured_product1_2.png" alt="Product Image" class="img-fluid"></a>
-                        <div class="add-to-wishlist">
-                          <i class="far fa-heart white"></i>
-                        </div>
-                      </div>  
-                      <div class="product-details">
-                        <div class="product-info ">
-                          <a href="#"><h3 class="product-title">Dress</h3></a>
-                        </div> 
-                        <div class="product-price text-color">$1,500</div>  
-                        <div class="d-flex mt-n4 align-items-end justify-content-between">
-                          <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star empty"></i>
-                          </div> 
-                          <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                        </div>
-                      <div>
-                      </div>
-                      </div>  
-
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xxl-2">
-                  <div class="product">
-
-                    <div class="product-image ">
-                      <a href="#"><img src="./images/shop/featured_product2.png" alt="Product Image" class="img-fluid"></a>
-                      <div class="add-to-wishlist">
-                        <i class="far fa-heart white"></i>
-                      </div>
-                    </div>
-                    <div class="product-details">
-                      <div class="product-info ">
-                        <a href="#"><h3 class="product-title">Dress</h3></a>
-                      </div> 
-                      <div class="product-price text-color">$1,500</div>  
-                      <div class="d-flex mt-n4 align-items-end justify-content-between">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star empty"></i>
-                        </div> 
-                        <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                      </div>
-                    <div>
-                    </div>
-                    </div>    
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xxl-2">
-                  <div class="product">
-
-                    <div class="product-image ">
-                      <a href="#"><img src="./images/shop/featured_product3.png" alt="Product Image" class="img-fluid"></a>
-                      <a href="#"><img src="./images/shop/featured_product3_2.png" alt="Product Image" class="img-fluid"></a>
-                      <div class="add-to-wishlist">
-                        <i class="far fa-heart white"></i>
-                      </div>
-                    </div>  
-                      
-                    <div class="product-details">
-                      <div class="product-info ">
-                        <a href="#"><h3 class="product-title">Dress</h3></a>
-                      </div> 
-                      <div class="product-price text-color">$1,500</div>  
-                      <div class="d-flex mt-n4 align-items-end justify-content-between">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star empty"></i>
-                        </div> 
-                        <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                      </div>
-                    <div>
-                    </div>
-                    </div>    
-                  </div>  
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xxl-2">
-                  <div class="product">
-
-                    <div class="product-image ">
-                      <a href="#"><img src="./images/shop/featured_product4.png" alt="Product Image" class="img-fluid"></a>
-                      <div class="add-to-wishlist">
-                        <i class="far fa-heart white"></i>
-                      </div>
-                    </div>  
-                    <div class="product-details">
-                      <div class="product-info ">
-                        <a href="#"><h3 class="product-title">Dress</h3></a>
-                      </div> 
-                      <div class="product-price text-color">$1,500</div>  
-                      <div class="d-flex mt-n4 align-items-end justify-content-between">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star empty"></i>
-                        </div> 
-                        <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                      </div>
-                    <div>
-                    </div>
-                    </div>  
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xxl-2">
-                  <div class="product">
-
-                    <div class="product-image ">
-                      <a href="#"><img src="./images/shop/featured_product5.png" alt="Product Image" class="img-fluid"></a>
-                      <div class="add-to-wishlist">
-                        <i class="far fa-heart white"></i>
-                      </div>
-                    </div>
-                    <div class="product-details">
-                      <div class="product-info ">
-                        <a href="#"><h3 class="product-title">Dress</h3></a>
-                      </div> 
-                      <div class="product-price text-color">$1,500</div>  
-                      <div class="d-flex mt-n4 align-items-end justify-content-between">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star empty"></i>
-                        </div> 
-                        <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                      </div>
-                    <div>
-                    </div>
-                    </div>  
-
-                  </div>
-                </div>
-                  
-                <div class="col-sm-6 col-lg-4 col-xxl-2">
-                  <div class="product">
-                    <div class="product-image ">
-                      <a href="#"><img src="./images/shop/featured_product6.png" alt="Product Image" class="img-fluid"></a>
-                      <div class="add-to-wishlist">
-                        <i class="far fa-heart white"></i>
-                      </div>
-                    </div>
-                    <div class="product-details">
-                      <div class="product-info ">
-                        <a href="#"><h3 class="product-title">Dress</h3></a>
-                      </div> 
-                      <div class="product-price text-color">$1,500</div>  
-                      <div class="d-flex mt-n4 align-items-end justify-content-between">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star empty"></i>
-                        </div> 
-                        <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                      </div>
-                    </div>  
-                  </div>
-                </div>
-
-              </div>
-
-            </div><!-- #featured_products -->
           </div><!-- #featured_products -->
 
           <!-- More Featured Products
           ============================================= -->
-          <div class="product-bg "> 
-            <div class="container">
-              <div class="section">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <div class="heading-block">
-                      <h2 class="title text-xl-start text-center">Best Selling</h2>
-                    </div>
-                    <div class="product product-on-image">
-                      <div class="product-image">
-                        <a href="#"><img src="./images/shop/best_product1.png" alt="dress" class="img-fluid">
-                        </a>  
-                        <div class="add-to-wishlist">
-                          <i class="far fa-heart white"></i>
-                        </div>
-                      </div>
-                      <div class="product-details product-details-on-bottom">
-                        <div class="product-info ">
-                          <a href="#"><h3 class="product-title">Dress</h3></a>
-                        </div> 
-                        <div class="product-price text-color">$1,500</div>  
-                        <div class="d-flex mt-n4 align-items-end justify-content-between">
-                        
-                          <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star empty"></i>
-                          </div> 
-                          <button class="addbag text-uppercase rounded-pill">add to bag</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="row ">
-                      <div class="heading-block">
-                        <h2 class="title text-xl-start text-center mt-xl-0 mt-5">New Arrivals</h2>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="product mb-0">
-                          <div class="product-image add">
-                            <a href="#">
-                              <img src="./images/shop/new_product1.png" alt="New Product" class="img-fluid">
-                              <div class="position-absolute add-icon mb-3 bottom-0 w-100 justify-content-center align-items-center">
-                                <div class="contact-icon me-1">
-                                  <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="contact-icon ms-1">
-                                  <i class="fas fa-link"></i>
-                                </div>
-                              </div>
-                            </a>
-                            <div class="add-to-wishlist ">
-                              <i class="far fa-heart white"></i>
-                            </div>
-                            
-                          </div>
-                          <div class="product-details text-xl-start text-center">
-                            <a href="#"><h3 class="product-title">Dress</h3></a>
-                            <div class="product-price text-color">$1,500</div>    
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="product mb-0">
-                          <div class="product-image add">
-                            <a href="#">
-                              <img src="./images/shop/new_product2.png" alt="New Product" class="img-fluid">
-                              <div class="position-absolute add-icon mb-3 bottom-0 w-100 justify-content-center align-items-center">
-                                <div class="contact-icon me-1">
-                                  <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="contact-icon ms-1">
-                                  <i class="fas fa-link"></i>
-                                </div>
-                              </div>
-                            </a>
-                            <div class="add-to-wishlist ">
-                              <i class="far fa-heart white"></i>
-                            </div>
-                            
-                          </div>
-                          <div class="product-details text-xl-start text-center">
-                            <a href="#"><h3 class="product-title">Dress</h3></a>
-                            <div class="product-price text-color">$1,500</div>    
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="product mb-0">
-                          <div class="product-image add">
-                            <a href="#">
-                              <img src="./images/shop/new_product3.png" alt="New Product" class="img-fluid">
-                              <div class="position-absolute add-icon mb-3 bottom-0 w-100 justify-content-center align-items-center">
-                                <div class="contact-icon me-1">
-                                  <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="contact-icon ms-1">
-                                  <i class="fas fa-link"></i>
-                                </div>
-                              </div>
-                            </a>
-                            <div class="add-to-wishlist ">
-                              <i class="far fa-heart white"></i>
-                            </div>
-                            
-                          </div>
-                          <div class="product-details text-xl-start text-center">
-                            <a href="#"><h3 class="product-title">Dress</h3></a>
-                            <div class="product-price text-color">$1,500</div>    
-                          </div> 
-                        </div>
-                      </div>
-                    </div> 
+          <div class="section bg-cover" style="background-image: url(./images/product-bg.png);">
+            
+              <div class="container">
 
-                    <div class="row ">
+                  <div class="row">
+
+                    <div class="col-xl-6">
+
                       <div class="heading-block">
-                        <h2 class="title text-xl-start text-center mt-5">Top Rated</h2>
+                        <h2 class="title text-lg-center mb-0">Best Selling</h2>
                       </div>
-                      <div class="col-md-4">
-                        <div class="product mb-0">
-                          <div class="product-image add">
-                            <a href="#">
-                              <img src="./images/shop/top_product1.png" alt="New Product" class="img-fluid">
-                              <div class="position-absolute add-icon mb-3 bottom-0 w-100 justify-content-center align-items-center">
-                                <div class="contact-icon me-1">
-                                  <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="contact-icon ms-1">
-                                  <i class="fas fa-link"></i>
-                                </div>
-                              </div>
-                            </a>
-                            <div class="add-to-wishlist ">
-                              <i class="far fa-heart white"></i>
-                            </div>
-                            
+
+                      <div class="product product-on-image">
+                        <div class="product-image">
+                          <a href="#"><img src="./images/shop/best_product1.png" alt="dress" class="img-fluid">
+                          </a>  
+                          <div class="add-to-wishlist">
+                            <i class="far fa-heart white"></i>
                           </div>
-                          <div class="product-details text-xl-start text-center">
+                        </div>
+                        <div class="product-details product-details-on-bottom">
+                          <div class="product-info ">
                             <a href="#"><h3 class="product-title">Dress</h3></a>
-                            <div class="product-price text-color">$1,500</div>    
-                          </div>    
+                          </div> 
+                          <div class="product-price ">$1,500</div>  
+                          <div class="d-flex mt-n4 align-items-end justify-content-between">
+                          
+                            <div class="product-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star empty"></i>
+                            </div> 
+                            <button class="btn btn-light text-primary text-uppercase border-primary rounded-pill">add to bag</button>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <div class="product mb-0">
-                          <div class="product-image add">
-                            <a href="#">
-                              <img src="./images/shop/top_product2.png" alt="New Product" class="img-fluid">
-                              <div class="position-absolute add-icon mb-3 bottom-0 w-100 justify-content-center align-items-center">
-                                <div class="contact-icon me-1">
-                                  <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="contact-icon ms-1">
-                                  <i class="fas fa-link"></i>
-                                </div>
-                              </div>
-                            </a>
-                            <div class="add-to-wishlist ">
-                              <i class="far fa-heart white"></i>
-                            </div>
-                            
-                          </div>
-                          <div class="product-details text-xl-start text-center">
-                            <a href="#"><h3 class="product-title">Dress</h3></a>
-                            <div class="product-price text-color">$1,500</div>    
-                          </div>    
+                    </div>
+
+                    <div class="col-xl-6">
+
+                      <div class="row ">
+
+                        <div class="heading-block">
+                          <h2 class="title mt-xl-0 mt-5 mb-0">New Arrivals</h2>
                         </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="product mb-0">
-                          <div class="product-image add">
-                            <a href="#">
-                              <img src="./images/shop/top_product3.png" alt="New Product" class="img-fluid">
-                              <div class="position-absolute add-icon mb-3 bottom-0 w-100 justify-content-center align-items-center">
-                                <div class="contact-icon me-1">
-                                  <i class="fas fa-shopping-cart"></i>
+
+                        <div class="col-md-4">
+
+                          <div class="product mb-0">
+                            <div class="product-image add">
+                              <a href="#">
+                                <img src="./images/shop/new_product1.png" alt="New Product" class="img-fluid">
+                                <div class="product-btns d-flex gap-2 justify-content-center">
+                                  <a class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                  <a class="add-to-link"><i class="fas fa-link"></i> </a>
                                 </div>
-                                <div class="contact-icon ms-1">
-                                  <i class="fas fa-link"></i>
-                                </div>
+                              </a>
+                              <div class="add-to-wishlist ">
+                                <i class="far fa-heart white"></i>
                               </div>
-                            </a>
-                            <div class="add-to-wishlist ">
-                              <i class="far fa-heart white"></i>
                             </div>
-                            
+                            <div class="product-details text-xl-start text-center">
+                              <a href="#"><h3 class="product-title">Dress</h3></a>
+                              <div class="product-price ">$1,500</div>    
+                            </div>
                           </div>
-                          <div class="product-details text-xl-start text-center">
-                            <a href="#"><h3 class="product-title">Dress</h3></a>
-                            <div class="product-price text-color">$1,500</div>    
-                          </div>    
+
                         </div>
-                      </div>
-                      </div>  
+
+                        <div class="col-md-4">
+
+                          <div class="product mb-0">
+                            <div class="product-image add">
+                              <a href="#"> <img src="./images/shop/new_product2.png" alt="New Product" class="img-fluid"></a>
+                              <div class="product-btns d-flex gap-2 justify-content-center">
+                                <a class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="add-to-link"><i class="fas fa-link"></i> </a>
+                              </div>
+                              <div class="add-to-wishlist ">
+                                <i class="far fa-heart white"></i>
+                              </div>
+                            </div>
+                            <div class="product-details text-xl-start text-center">
+                              <a href="#"><h3 class="product-title">Dress</h3></a>
+                              <div class="product-price ">$1,500</div>    
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                          <div class="product mb-0">
+                            <div class="product-image add">
+                              <a href="#"> <img src="./images/shop/new_product3.png" alt="New Product" class="img-fluid"> </a>
+                              <div class="product-btns d-flex gap-2 justify-content-center">
+                                <a class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="add-to-link"><i class="fas fa-link"></i> </a>
+                              </div>
+                              <div class="add-to-wishlist ">
+                                <i class="far fa-heart white"></i>
+                              </div>
+                            </div>
+                            <div class="product-details text-xl-start text-center">
+                              <a href="#"><h3 class="product-title">Dress</h3></a>
+                              <div class="product-price ">$1,500</div>    
+                            </div> 
+                          </div>
+                        </div>
+                      </div> 
+  
+                      <div class="row ">
+
+                        <div class="heading-block">
+                          <h2 class="title mt-5 mb-0">Top Rated</h2>
+                        </div>
+
+                        <div class="col-md-4">
+
+                          <div class="product mb-0">
+                            <div class="product-image add">
+                              <a href="#"><img src="./images/shop/top_product1.png" alt="New Product" class="img-fluid"></a>
+                              <div class="product-btns d-flex gap-2 justify-content-center">
+                                <a class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="add-to-link"><i class="fas fa-link"></i> </a>
+                              </div>
+                              <div class="add-to-wishlist ">
+                                <i class="far fa-heart white"></i>
+                              </div>
+                            </div>
+                            <div class="product-details text-xl-start text-center">
+                              <a href="#"><h3 class="product-title">Dress</h3></a>
+                              <div class="product-price ">$1,500</div>    
+                            </div>    
+                          </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                          <div class="product mb-0">
+                            <div class="product-image add">
+                              <a href="#"><img src="./images/shop/top_product2.png" alt="New Product" class="img-fluid"> </a>
+                              <div class="product-btns d-flex gap-2 justify-content-center">
+                                <a class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="add-to-link"><i class="fas fa-link"></i> </a>
+                              </div>
+                              <div class="add-to-wishlist ">
+                                <i class="far fa-heart white"></i>
+                              </div>
+                              
+                            </div>
+                            <div class="product-details text-xl-start text-center">
+                              <a href="#"><h3 class="product-title">Dress</h3></a>
+                              <div class="product-price ">$1,500</div>    
+                            </div>    
+                          </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                          <div class="product mb-0">
+                            <div class="product-image add">
+                              <a href="#"><img src="./images/shop/top_product3.png" alt="New Product" class="img-fluid"></a>
+                              <div class="product-btns d-flex gap-2 justify-content-center">
+                                <a class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="add-to-link"><i class="fas fa-link"></i> </a>
+                              </div>
+                              <div class="add-to-wishlist ">
+                                <i class="far fa-heart white"></i>
+                              </div>
+                            </div>
+                            <div class="product-details text-xl-start text-center">
+                              <a href="#"><h3 class="product-title">Dress</h3></a>
+                              <div class="product-price ">$1,500</div>    
+                            </div>    
+                          </div>
+                        </div>
+
+                        </div>  
+                        
+                    </div>
+
                   </div>
-                </div>
-              </div>
-            </div>  
+               
+              </div>  
+
           </div><!-- #more_featured_products -->
 
-          <!-- logos -->
           <!-- Partners
           ============================================= -->
-          <div class="container">
+          <div class="section">
 
-            <div class="row section-padding-top g-0">
+            <div class="container">
 
-                <div class="col-12">
-                    <div class="logos">
-                        <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div>
-                    </div>
-                </div>                            
-
+              <div class="row">
+  
+                  <div class="col-12">
+                      <div class="logos">
+                          <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
+                          <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
+                          <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
+                          <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
+                          <div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div>
+                          <div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div>
+                      </div>
+                  </div>                            
+  
+              </div>
+  
             </div>
 
           </div><!-- #partners -->
 
           <!-- Ads
           ============================================= -->
-          <div class="container section"> 
+          <div class="container section pt-0"> 
             <div class="row">
 
               <div class="col-xl-6 mb-5 mb-xl-0">
                 <div class="ads">
                   <div class="ads-bg">
-                    <img src="images/ads/ads1.png" alt="ads Image" class="img-full">
+                    <div class="ads-bg-img" style="background-image: url(./images/ads/ads1.png);"></div>
                   </div>
                   <div class="ads-body">
                     <h3 class="fst-italic fw-bold">Shoes as</h3>
-                    <h1 class="text-color lh-1">Gift</h1>
-                    <p class="text-color mb-0 fw-semi-light">when you bought a dress</p>
+                    <h1 class=" lh-1">Gift</h1>
+                    <p class=" mb-0 fw-semi-light">when you bought a dress</p>
                   </div>
                 </div>
   
@@ -722,14 +680,14 @@
   
               <div class="col-xl-6 mt-5 mt-xl-0">
                 <div class="ads">
-                   <div class="ads-bg">
-                    <img src="images/ads/ads2.png" alt="ads Image" class="img-full">
+                  <div class="ads-bg">
+                    <div class="ads-bg-img" style="background-image: url(./images/ads/ads2.png);"></div>
                   </div>
                   <div class="ads-body">
                     <h3 class="fst-italic fw-bold">Birdesmaid dresses</h3>
-                    <h1 class="text-color lh-1">Sale</h1>
+                    <h1 class=" lh-1">Sale</h1>
                     <a href="#">
-                      <p class="text-color fw-semi-bold mb-0">SHOP NOW</p>
+                      <p class=" fw-semi-bold mb-0">SHOP NOW</p>
                     </a>
                   </div>
                 </div>
@@ -740,62 +698,55 @@
 
           <!-- Posts
           ============================================= -->
-          <div class="section  pt-0 news">
+          <div class="section pt-0">
 
             <div class="container">
 
               <div class="heading-block text-center">
                 <img src="./images/title-img.png" class="mb-3 title-img">
-                <h2 class="title">Our News</h2>
+                <h2 class="title mb-0">Our News</h2>
               </div>
 
               <div class="row">
+
                 <div class="col-lg-6">
+
                   <div class="pe-0 pe-lg-5">
-                    <article class="post row">
-                      <div class="col-lg-12">
-                        <div class="post-content border-bottom ">
-                          <ul class="entry-meta mb-4">
-                            <li><a href="#">09 March 2021</a></li>
-                          </ul>
-                          <div class="entry-title">
-                            <h4 class="mb-3"><a href="#" class="text-color">How to choose a dress </a></h4>
-                          </div>
-                          <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          </div>
-                          <a href="#" class="entry-link text-uppercase">Read More</a>
+                    <article class="post">
+                      <div class="post-content border-bottom">
+                        <ul class="entry-meta mb-4">
+                          <li><a href="#">09 March 2021</a></li>
+                        </ul>
+                        <h4 class="entry-title mb-3"><a href="#" class="">How to choose a dress </a></h4>
+                        <div class="entry-content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
+                        <a href="#" class="entry-link text-uppercase">Read More</a>
                       </div>
                     </article>
                   
-                    <article class="post row">
-                      <div class="col-lg-12">
+                    <article class="post">
                         <div class="post-content">
                           <ul class="entry-meta">
                             <li><a href="#"></i>09 March 2021</a></li>
                           </ul>
-                          <div class="entry-title">
-                            <h4 class="mb-3"><a href="#" class="text-color">What to look for when choosing a wedding dress</a></h4>
-                          </div>
+                          <h4 class="entry-title mb-3"><a href="#" class="">What to look for when choosing a wedding dress</a></h4>
                           <div class="entry-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
                           <a href="#" class="entry-link text-uppercase">Read More</a>
                         </div>
-                      </div>
-                    
                     </article>
+
                   </div>
+
                 </div>
                 
                 <div class="col-lg-6 ps-lg-5">  
-                  <div class="trend position-relative ps-0">
                     <a href="#">
                       <img src="./images/post/post1.png" alt="Psot Image" class="img-fluid">                                 
                     </a>
-                    <p>Trends 2021</p>
-                  </div>                              
+                    <p>Trends 2021</p>                        
                 </div>
 
               </div>
@@ -803,9 +754,6 @@
             </div>
 
           </div><!-- #posts -->
-
-
-        </div>
 
       </section>    
 
@@ -819,128 +767,94 @@
   
           <div class="container">
   
-            <div class="row mx-auto">
+            <div class="row">
   
-              <div class="col-lg-6">
+              <div class="col-lg-6 pe-lg-5 border-end">
   
                 <div class="row">
   
-                  <div class="col d-flex justify-content-between">                                
+                  <div class="col-md-8">                                
   
-                    <div class="widget widget-custom-html">
-                      <a href="#">
-                        <h4 class="widget-title h5 text-dm-grey text-uppercase">Call Now</h4>
-                      </a>
-                      <div class="widget-subtitle">
-                        <p class="mb-4">
-                          <a href="callto:1234567890" class="text-color lh-1 body-font mb-4 fw-semi-bold">123-456-7890</a>      
-                        </p>
-                      </div>
+                    <div class="widget widget-custom-html text-center text-lg-start">
+                      <h5 class="widget-title mb-3 text-uppercase">Call Now</h5>
                       <div class="widget-content">
-                        <p class="mb-4 fw-semi-light fs-4 lh-3">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Phasellus blandit massa enim.</p>
+                        <a href="callto:1234567890" class="h-1 mb-4 fw-semi-bold" style="font-size: 1.5rem;">123-456-7890</a>
+                        <p class="mb-3 fw-semi-light fs-4 lh-3">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Phasellus blandit massa enim.</p>
                       </div>                                    
                     </div>
   
-                    <div class="widget widget-social text-end">
-                      <h4 class="widget-title h4 text-dm-grey text-uppercase">Follow Us</h4>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="widget widget-social text-center text-lg-end">
+                      <h5 class="widget-title text-uppercase">Follow Us</h5>
                       <div class="widget-content">
-                        <ul class="social-icons d-flex align-items-center justify-content-end">
+                        <ul class="social-icons d-flex align-items-center justify-content-center justify-content-lg-end">
                           <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
                           <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
                           <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-telegram-plane"></i></a></li>
                         </ul>
                       </div>
                     </div>
-  
                   </div>
   
                 </div>
   
-                
+                <div class="widget widget-links pt-lg-5 pb-4">
+                  <div class="widget-content">
+                    <ul class="d-md-flex justify-content-between text-center text-lg-start">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Service</a></li>
+                      <li><a href="#">Order Tracking</a></li>
+                      <li><a href="#">Shopping & Delivery</a></li>
+                    </ul>
+                  </div>                                    
+                </div>
   
-                <div class="row py-4">
-  
-                  <div class="col-12">
-  
-                    <div class="widget widget-links">
-                      <div class="widget-content">
-                        <ul>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Our Service</a></li>
-                          <li><a href="#">Order Tracking</a></li>
-                          <li><a href="#">Shopping & Delivery</a></li>
-                        </ul>
+                <div class="d-md-flex align-items-center justify-content-between mb-4">
+
+                  <div class="widget widget-payment mb-4 mb-lg-0">
+                    <div class="widget-content">
+                      <div class="payments d-flex justify-content-center justify-content-lg-start">
+                        <span class="payment-icon paypal"></span>
+                        <span class="payment-icon mastercard"></span>
+                        <span class="payment-icon visa"></span>
+                        <span class="payment-icon express"></span>
                       </div>                                    
                     </div>
-  
+                    
                   </div>
-  
-                </div>
-  
-                <div class="row pt-3">
-  
-                  <div class="col d-flex align-items-center justify-content-between">
-  
-                    <div class="widget widget-payment">
-                      <div class="widget-content">
-                        <div class="payments">
-                          <span class="payment-icon paypal"></span>
-                          <span class="payment-icon mastercard"></span>
-                          <span class="payment-icon visa"></span>
-                          <span class="payment-icon express"></span>
-                        </div>                                    
-                      </div>
-                      
-                    </div>
-  
-                    <p id="copyrights" class="text-end text-dm-grey mb-0">&copy; Copyrights 2021 </p>
-  
-                  </div>
-  
+
+                  <p id="copyrights" class="text-center text-lg-end mb-0">&copy; Copyrights 2021 </p>
+
                 </div>
                 
               </div>
   
-              <div class="col-lg-1 divide-line">
+              <div class="col-lg-5 ps-lg-5">
   
-              </div>
-  
-              <div class="col-lg-5 mt-5 mt-lg-0">
-  
-                <div class="row">
-  
-                  <div class="col">
-  
-                    <div class="widget widget-custom-html">
-                      <a href="#">
-                        <h4 class="widget-title h4 text-dm-grey text-uppercase">Our Address</h4>
-                      </a>
-                      <div class="widget-content">    
-                          <p class="widget-subtitle text-color body-font mb-4 fw-semi-bold">New York</p>
-                          <div class="address">
-                            <p class="mb-0 fs-4 fw-semi-light">5686 Edverano Center</p>
-                            <p class="mb-0"><a class="text-color mb-4 fs-4 fw-semi-light" href="mailto:info@gmail.com">info@gmail.com</a></p>
-                          </div>
+                <div class="widget widget-custom-html text-center text-lg-start">
+                  <h5 class="widget-title mb-3 text-uppercase">Our Address</h5>
+                  <div class="widget-content">    
+                      <a href="#" class="mb-4 fw-semi-bold" style="font-size: 1.5rem;">New York</a>
+                      <p class="mb-0 fs-4 fw-semi-light">5686 Edverano Center</p>
+                      <p class="mb-0 mb-4 fs-4 fw-semi-light">info@gmail.com</p>
+                    </div>
+                </div>
+    
+                <div class="widget widget-subscribe pt-lg-5 text-center text-lg-start">
+                  <h5 class="widget-title mb-3 text-uppercase">Subscribe to our the free newsletter</h5>
+                  <div class="widget-content">
+                    <form id="widget-subscribe-form" class="mb-0" action="#" method="post">
+                      <div class="input-group">
+                        <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
+                        <div class=" input-group-append">
+                          <button class="btn btn-primary text-white rounded-pill text-uppercase fixed-top position-relative " type="submit">Subscribe</button>
                         </div>
-                    </div>
-        
-                    <div class="widget widget-subscribe pt-5">
-                      <h4 class="widget-title text-dm-grey text-uppercase pt-5">Subscribe to our the free newsletter</h5>
-                      <div class="widget-content">
-                        <form id="widget-subscribe-form" class="mb-0" action="#" method="post">
-                          <div class="input-group">
-                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
-                            <div class=" input-group-append">
-                              <button class="btn btn-primary text-white rounded-pill text-uppercase fixed-top position-relative " type="submit">Subscribe</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>                                    
-                    </div>        
-  
-                  </div>
-  
-                </div>
+                      </div>
+                    </form>
+                  </div>                                    
+                </div>        
                 
               </div>
   
@@ -951,10 +865,8 @@
         </div><!-- #footer-main -->
   
       </footer><!-- #footer -->
+
     </div>  
-  <!-- Go To Top
-  ============================================= -->
-  <div id="gotoTop" class="icon-angle-up"></div>
 
   <!-- External JavaScripts
   ============================================= -->

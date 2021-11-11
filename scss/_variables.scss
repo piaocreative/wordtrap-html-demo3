@@ -14,9 +14,7 @@
 
 $theme-color:                   #b2b0d5;
 $body-color:                    #7d7b78;
-$heading-color:                 #302f2d;
-$text-color:                    #58586e;
-$input-color:                   #e2e2e2 !important;            
+$heading-color:                 #58586e;        
 
 
 //-------------------- Font Families --------------------//
@@ -30,19 +28,7 @@ $heading-font:                  'Playfair Display', sans-serif;
 // Theme Colors
 $primary:                       $theme-color;
 $secondary:                     $heading-color;
-$third:                         $text-color;
 
-
-// Spacer
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-) !default;
 
 // Link
 $link-color:                    $heading-color;
@@ -110,7 +96,7 @@ $topbar-hover-color:            #b2b0d5;
 
 //-------------------- Header --------------------//
 
-$header-height:                 6.3rem;
+$header-height:                 7rem;
 
 // Sticky Header
 $sticky-header-height:          3.75rem;

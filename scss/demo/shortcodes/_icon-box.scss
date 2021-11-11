@@ -11,28 +11,31 @@
 
 
 .icon-box {
-    display: flex;
-	align-items: center;
+	display: block;
 	margin-bottom: 1.5rem;
 
 	.icon-wrapper {
-		width: 2.5rem;
-		line-height: 1;
+		background-color: rgb(178, 176, 214);
+		border-radius: 50%;
+		color: rgba(240,240,240,.7);
+		display: inline-block;
+		line-height: 1.8125rem;
+		width: 2.8125rem;
+		height: 2.8125rem;
+		vertical-align: middle;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		i {
-			color: #d6ccca;
-			font-size: 1.125rem;
+			vertical-align: top;
+			line-height: 1.8125rem;
 		}
 	}
 
 	.icon-header {
-		display: flex;
-		align-items: center;
-		line-height: 1;
-
 		h4 {
-			font-weight: 300;
-			margin-bottom: 0;
 			width: 9rem;			
 		}
 	}

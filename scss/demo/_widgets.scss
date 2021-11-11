@@ -20,17 +20,12 @@
 	position: relative;
 
 	.widget-title {
-		font-size: $h5-font-size;
+		font-size: 0.875rem;
 		font-family: $body-font;
 		font-weight: 600;
-		margin-bottom: $spacer;
 		color: #bbbbca;
+		letter-spacing: 0.05rem;
 	}	
-
-	.widget-subtitle {
-		line-height: 1;
-		font-size: 1.5rem;
-	}
 	
 	// Widget - Social
 	&.widget-social {
@@ -70,13 +65,8 @@
 	// Widget - Links
 	&.widget-links {
 		ul {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 2rem;
-
 			li {
 				a {
-					color: $text-color;
 					font-weight: 600;
 					text-transform: uppercase;
 				}
@@ -87,8 +77,6 @@
 	// Widget - Payments
 	&.widget-payment {
 		.payments {
-			display: flex;
-
 			.payment-icon {
 				display: inline-block;
 				vertical-align: middle;

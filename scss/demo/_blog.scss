@@ -11,19 +11,6 @@
 
 .post {
 	position: relative;
-	margin-bottom: 0;
-	
-	&.post-flat {
-		display: flex;
-		
-		.post-thumbnail {
-			flex: 1;
-		}
-
-		.post-content {
-			flex: 1;
-		}
-	}
 }
 
 .post-thumbnail {
@@ -49,21 +36,19 @@
 	padding: 1.875rem 0;
 	
 }
+
 .border-bottom {
 	border-bottom: 1px dotted #dbd7e6!important;
 }
 
 .entry-title {
 	margin-bottom: 1.15rem;
+	font-family: $body-font;
+	font-weight: 400;
+	line-height: 1;		
 
-	h4 {
-		font-family: $body-font;
-		font-weight: 400;
-		line-height: 1;		
-
-		a {
-			&:hover { color: $theme-color; }
-		}
+	a {
+		&:hover { color: $theme-color; }
 	}
 }
 
