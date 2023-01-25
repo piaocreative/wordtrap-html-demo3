@@ -83,12 +83,6 @@ body {
 
 iframe { border: none !important; }
 
-.bg-cover {
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-}
-
 
 /* ----------------------------------------------------------------
 	Basic Layout Styles
@@ -120,6 +114,7 @@ pre,
 dl,
 dd,
 blockquote,
+q,
 address,
 table,
 fieldset,
@@ -141,4 +136,29 @@ i {
 
 a {
 	@include transition(all 0.3s ease-in-out);
+}
+
+/* Blockquote */
+blockquote,
+q {
+	color: $theme-color;
+	display: block;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 3.75rem;
+
+	&::before {
+		color: $theme-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1;
+		display: block;
+		text-align: center;
+	}
+
+	&::after {
+		content: "";
+	}
 }

@@ -24,34 +24,37 @@
 		background: transparent;
 		z-index: 199;
 
-		& + #banner {
+		& + #content {
 			top: -$header-height;
 			margin-bottom: -$header-height;
+
+			.page-content {
+				padding-top: $header-height;
+			}
 		}
 	}
 }
 
+#header-wrap {
+	@include media-breakpoint-up(xxl) {
+		margin-left: 4.625rem;
+		margin-right: 4.625rem;
+	}	
+}
 
 /* ----------------------------------------------------------------
 	Sticky Header
 -----------------------------------------------------------------*/
-#header-wrap {
-	margin-left: 4.687rem;
-	margin-right: 3.98rem;
-}
 
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 0;
+	margin-right: 3.125rem;
 
-	img {
-		margin-top: 1.828rem;
-		margin-bottom: 2.25rem;
-		margin-right: 3.5rem;
-		width: 6.56rem;
+	img {		
+		width: 9.375rem;
 	}
 }
 
@@ -61,28 +64,63 @@
 -----------------------------------------------------------------*/
 
 #primary-menu {
-
 	.nav-link {
-		color: $primary-menu-font-color;
-		font-family: $primary-menu-font;
-		font-size: $primary-menu-font-size;
-		font-weight: $primary-menu-font-weight;
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;
-	
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			line-height: 1;
-			padding: $primary-menu-padding 1.34rem;
 		}
 	}
 
 	.nav-item {
-		&.current,
-		&:hover {
-			color: #acb0d5;
+		&.current {
+			& > a {
+				color: $navbar-light-active-color;
+			}
+		}
 
-			a {
-				color: $theme-color;
+		.dropdown-menu {
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			background-color: transparent;
+	
+			@include media-breakpoint-up(xxl) {
+				background-color: $white;
+				display: block;
+				min-width: 14rem;
+				top: -1000px;
+				opacity: 0;
+	
+				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
+				@include transition(transform .2s ease-out);
+				@include translate3d(0, -20px, 0);
+				@include border-radius(1rem);
+			}
+			
+			.nav-item {
+				a {
+					border: none;
+					padding: 0.75rem 1.125rem;
+				}
+				
+				&.current,
+				&:hover {
+					background-color: $navbar-light-active-color;
+
+					> a {
+						color: $white;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-up(xxl) {
+			&.dropdown:hover {
+				.dropdown-menu {
+					top: auto;				
+					opacity: 1;
+	
+					@include translate3d(0, 0, 0);
+				}
 			}
 		}
 	}
@@ -101,17 +139,12 @@
 -----------------------------------------------------------------*/
 
 #top-btns {
-
 	.nav-item {
-		padding: 0 0.82rem;
-
-		@include media-breakpoint-down(xl) {
-			padding-bottom: 2rem;
-			padding-left: 0;
-		}
-
 		.nav-link {
-			padding: 0px;
+			@include media-breakpoint-up(xxl) {
+				padding: 0 0.82rem;
+			}
+
 			color: $top-btn-font-color;
 			font-size: $top-btn-font-size;
 			line-height: 1;
@@ -119,6 +152,7 @@
 			&:hover {
 				color: $theme-color;
 			}
+
 			i {
 				font-size: $h3-font-size;
 			}
@@ -153,7 +187,7 @@
 
 #top-links {
 	.nav-item {			
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			padding-right: 1.875rem;		
 		}
 	}
@@ -163,7 +197,7 @@
 		display: block;
 		font-size: 0.75rem;	
 		
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			padding: 0;		
 		}
 
@@ -189,12 +223,12 @@
 		@include border-radius(0);
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			width: 8.75rem;
 		}
 
 		a.dropdown-item {
-			color: $heading-color;
+			color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
 			font-size: 0.75rem;				
@@ -215,43 +249,3 @@
 		}
 	}
 }
-
-
-/* ----------------------------------------------------------------
-	Top Infos
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Social
------------------------------------------------------------------*/
-
-
-
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-
-
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
-
-
-
-
-
-

@@ -21,6 +21,12 @@
 
 #footer-main {
 	padding: 5rem 0;
+
+	.border-end {
+		@include media-breakpoint-down(lg) {
+			border: none !important;
+		}
+	}
 }
 
 #copyrights {

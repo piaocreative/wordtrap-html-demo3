@@ -17,23 +17,90 @@
 
 
 .banner {
-    .banner-wrapper {
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+    position: relative;
+
+    &#home-banner {
+        #banner-slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            .slick-list,
+            .slick-track,
+            .slick-slide > div {
+                height: 100%;
+            }
+
+            .banner-slide {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .slick-arrow {
+                background-color: transparent;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                border: none;
+                display: block;
+                width: 5.5rem;
+                height: 1.1875rem;
+                position: absolute;
+                top: 50%;
+                padding: 0;
+                z-index: 2;
+
+                @include translateY(-50%);
+            }
+
+            .banner-slick-prev {
+                background-image: url(../images/banner/slider-prev.png);
+                left: 5%;
+            }
+
+            .banner-slick-next {
+                background-image: url(../images/banner/slider-next.png);
+                right: 5%;
+            }
+        }
+
+        .banner-content {
+            width: 100%;
+            height: 100%;
+            padding-top: 7.25rem;
+            padding-bottom: 11rem;
+            position: relative;
+            z-index: 1;
+
+            h2 {
+                font-size: 1.875rem;
+                
+            }
+
+            h1 {
+                line-height: 6rem;                
+                margin-bottom: 3.75rem;
+
+                @include media-breakpoint-up(md) {
+                    line-height: 9rem;
+                }
+            }
+        }
     }
 
     &#about-banner {
-        position: relative;
-        top: -$header-height;
-        margin-bottom: -$header-height;
-        padding-top: 5.375rem;
-        padding-bottom: 3.75rem;
-    }
-
-    &#contact-banner {
-        position: relative;
-        top: -$header-height;
-        margin-bottom: -$header-height;
+        background-image: url(../images/banner/about-banner.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding-top: 5.375rem;
         padding-bottom: 3.75rem;
     }

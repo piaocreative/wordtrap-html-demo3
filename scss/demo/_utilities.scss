@@ -3,7 +3,9 @@
 -----------------------------------------------------------------------------------*/
 
 
-//-------------------- Fonts --------------------//
+/*-----------------------------------------------------------------------------------
+	Custom Fonts
+-----------------------------------------------------------------------------------*/
 
 // Font Family
 .body-font { font-family: $body-font !important; }
@@ -14,7 +16,9 @@
 .fw-semi-light { font-weight: 350; }
 
 
-//-------------------- Image --------------------//
+/*-----------------------------------------------------------------------------------
+	Image
+-----------------------------------------------------------------------------------*/
 
 img {
 	&.img-full {
@@ -22,8 +26,10 @@ img {
 	}
 }
 
-//-------------------- Section ------------------//
 
+/*-----------------------------------------------------------------------------------
+	Section
+-----------------------------------------------------------------------------------*/
 
 .section {
 	position: relative;
@@ -32,3 +38,183 @@ img {
 }
 
 
+/*-----------------------------------------------------------------------------------
+	Buttons
+-----------------------------------------------------------------------------------*/
+
+.btn {
+	i {
+		margin-right: 0.625rem;
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.btn-#{$color},
+	.btn-#{$color}:hover {
+		color: $white;
+	}
+
+	.btn-outline-#{$color}:hover {
+		color: $white;
+	}
+}
+
+
+/*-----------------------------------------------------------------------------------
+	Background
+-----------------------------------------------------------------------------------*/
+
+.bg-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+/*-----------------------------------------------------------------------------------
+	Custom Link
+-----------------------------------------------------------------------------------*/
+
+.arrow-link {
+	position: relative;
+	padding-right: 1.5rem;	
+
+	&:after {
+		content: "";
+		position: absolute;
+		right: $spacer / 4;
+		top: 50%;
+		margin-top: -$spacer / 4;
+		display: block;
+		width: $spacer / 4;
+		height: 0.8rem;
+		background-image: url(../images/right-arrow-icon.png);
+		background-repeat: no-repeat;
+		background-size: 100%;		
+		opacity: 0;
+		@include transition(opacity 0.3s ease-in-out);
+	}
+
+	&:hover:after {
+		opacity: 1;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Bootstarp Slider
+-----------------------------------------------------------------*/
+
+.slider.slider-horizontal {
+    width: 100%;
+
+    .slider-track {
+        height: 5px;
+    }
+}
+
+.slider-track {
+    background-color: $light;
+    background-image: none;
+
+    @include box-shadow(none);
+}
+
+.slider-selection,
+.slider-handle {
+    background-color: $theme-color;
+    background-image: none;
+
+    @include box-shadow(none);
+}
+
+.slider-handle {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
+
+.nav-tabs {
+	border-bottom: 0;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		font-size: 1.125rem;
+		font-weight: 600;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
+
+.accordion-header {
+	margin-bottom: 0;
+}
+
+.accordion-button {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.accordion-body {
+	padding-top: 0;
+}
+
+.accordion-item {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	Pagination
+-----------------------------------------------------------------*/
+
+.pagination {
+	.page-item {
+		margin-left: 0.5rem;		
+
+		&.prev {
+			.page-link {
+				&::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-right: 0.625rem;
+				}
+
+				&:hover::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}			
+		}
+
+		&.next {
+			.page-link {
+				&::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-left: 0.625rem;
+				}
+
+				&:hover::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		.page-link {
+			line-height: 1;
+			position: relative;
+
+			@include border-radius($pagination-border-radius);
+		}
+	}
+}
