@@ -9848,29 +9848,24 @@ q::after {
 -----------------------------------------------------------------*/
 #header {
   position: relative;
+  padding-left: 3.625rem;
+  padding-right: 3.625rem;
 }
 #header.transparent-header {
   background: transparent;
   z-index: 199;
 }
-#header.transparent-header + #content {
-  top: -6.3125rem;
-  margin-bottom: -6.3125rem;
-}
-#header.transparent-header + #content .page-content {
-  padding-top: 6.3125rem;
-}
-
-@media (min-width: 1400px) {
-  #header-wrap {
-    margin-left: 4.625rem;
-    margin-right: 4.625rem;
+@media (min-width: 1200px) {
+  #header.transparent-header + #content {
+    top: -6.3125rem;
+    margin-bottom: -6.3125rem;
+    position: relative;
   }
 }
+#header.transparent-header .navbar-nav .nav-link, #header.transparent-header .navbar-nav#top-infos .phone-number a {
+  color: #fff;
+}
 
-/* ----------------------------------------------------------------
-	Sticky Header
------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
@@ -9878,7 +9873,7 @@ q::after {
   margin-right: 3.125rem;
 }
 .navbar-brand img {
-  width: 9.375rem;
+  max-width: 9.375rem;
 }
 
 /* ----------------------------------------------------------------
@@ -9936,47 +9931,6 @@ q::after {
 }
 
 /* ----------------------------------------------------------------
-	Mega Menu
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-	Top Buttons
------------------------------------------------------------------*/
-#top-btns .nav-item .nav-link {
-  color: #484861;
-  font-size: 1.5rem;
-  line-height: 1;
-}
-@media (min-width: 1400px) {
-  #top-btns .nav-item .nav-link {
-    padding: 0 0.82rem;
-  }
-}
-#top-btns .nav-item .nav-link:hover {
-  color: #b2b0d5;
-}
-#top-btns .nav-item .nav-link i {
-  font-size: 1.125rem;
-}
-#top-btns .nav-item .phone-number {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-right: 2rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0;
-}
-@media (max-width: 1399.98px) {
-  #top-btns .nav-item .phone-number {
-    margin-right: 0;
-  }
-}
-#top-btns .nav-item span {
-  font-size: 0.7rem;
-}
-#top-btns .nav-item .cart-count {
-  color: #767e92;
-}
-
-/* ----------------------------------------------------------------
 	Top Links
 -----------------------------------------------------------------*/
 @media (min-width: 1400px) {
@@ -9986,8 +9940,8 @@ q::after {
 }
 #top-links a.nav-link {
   color: #767e92;
-  display: block;
   font-size: 0.75rem;
+  display: block;
 }
 @media (min-width: 1400px) {
   #top-links a.nav-link {
@@ -9998,12 +9952,12 @@ q::after {
   color: #b2b0d5;
 }
 #top-links .dropdown-toggle::after {
-  margin-left: 0.75em;
+  margin-left: 0.75rem;
 }
 #top-links .dropdown-menu {
   background: #fff;
   border: 0;
-  top: 2.75rem;
+  top: 1.875rem;
   left: 0;
   width: 100%;
   margin: 0;
@@ -10033,6 +9987,41 @@ q::after {
   width: 1rem;
   height: 1rem;
   margin-right: 0.25rem;
+}
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+@media (min-width: 1400px) {
+  #top-infos {
+    margin-right: 2.75rem;
+  }
+}
+#top-infos .phone-number a {
+  color: #58586e;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#top-infos .phone-number a:hover {
+  color: #b2b0d5;
+}
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+@media (max-width: 1399.98px) {
+  #top-btns {
+    padding: 1rem 0;
+  }
+}
+#top-btns .nav-link {
+  color: #484861;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0 0.75rem;
+}
+#top-btns .nav-link:hover {
+  color: #b2b0d5;
 }
 
 .error-menu a {
