@@ -1,16 +1,15 @@
 .error-menu {
-//   margin-top: 4rem;
+	a {
+		font-size: $h4-font-size;
+		font-weight: 300;
+		border-bottom: 0.2px dotted #7d7b78;
+		color: #7d7b78;
+		padding: 1rem 0;
 
-  a {
-    font-size: $h4-font-size;
-    font-weight: 300;
-	border-bottom: 0.2px dotted #7d7b78;
-	color: #7d7b78;
-	padding: 1rem 0;
-
-    &:hover {
-      color: #acb0d5;
-	  @include transition(all 0.3s ease-in-out);
-    }
-  }
+		&:hover {
+			color: #acb0d5;
+			
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
 }

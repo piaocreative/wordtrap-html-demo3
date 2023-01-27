@@ -11,24 +11,24 @@
 
 
 .social-share {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-    a {
-        background-color: $theme-color;					
-        color: $white;
-        display: block;
-        line-height: 2.625rem;
-        width: 2.625rem;
-        height: 2.625rem;		
-        text-align: center;
-        margin-right: 0.5rem;
+	a {
+		background-color: $theme-color;					
+		color: $white;
+		display: block;
+		line-height: 2.625rem;
+		width: 2.625rem;
+		height: 2.625rem;		
+		text-align: center;
+		margin-right: 0.5rem;
 
-        &:last-child {
-            margin: 0;
-        }
-        
-        @include transition(all 0.3s ease-in-out);
-        @include border-radius($border-radius);
-    }
+		&:last-child {
+			margin: 0;
+		}
+		
+		@include transition(all 0.3s ease-in-out);
+		@include border-radius($border-radius);
+	}
 }

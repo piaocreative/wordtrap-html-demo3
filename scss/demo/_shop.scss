@@ -203,30 +203,30 @@
 }
 
 .ads {
-    position: relative;
-    display: block;
+	position: relative;
+	display: block;
 	margin-bottom: 1.5rem;
 
-    .ads-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+	.ads-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
 
-        .ads-bg-img {
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+		.ads-bg-img {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 			border-radius: 0.75rem;;
-        }
-    }
+		}
+	}
 
 	.ads-body {
 		position: relative;
@@ -262,7 +262,7 @@
 
 .product-filters {
 	.filter-title {
-		color: $headings-color;    
+		color: $headings-color;
 		font-size: .875rem;
 		font-family: $body-font;
 		font-weight: 600;
@@ -462,4 +462,4 @@
 	& > :not(caption) > * > * {
 		border-bottom-width: 0;
 	}
-}    
+}
