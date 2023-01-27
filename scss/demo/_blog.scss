@@ -34,7 +34,7 @@
 .post-content {
 	position: relative;
 	padding: 1.875rem 0;
-	
+
 }
 
 .border-bottom {
@@ -45,7 +45,7 @@
 	margin-bottom: 1.15rem;
 	font-family: $body-font;
 	font-weight: 400;
-	line-height: 1;		
+	line-height: 1;
 
 	a {
 		&:hover { color: $theme-color; }
@@ -67,9 +67,9 @@
 	}
 }
 
-.entry-content { 
-	position: relative; 
-	
+.entry-content {
+	position: relative;
+
 	p {
 		margin-bottom: 1rem;
 		line-height: 2;
@@ -93,7 +93,7 @@
 #single-post {
 	.post {
 		margin-bottom: $spacer;
-		
+
 		.post-content {
 			padding: 2.5rem 0;
 			display: block;

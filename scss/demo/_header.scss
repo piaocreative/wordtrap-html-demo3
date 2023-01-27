@@ -17,7 +17,7 @@
 
 
 #header {
-	position: relative;	
+	position: relative;
 	padding-left: 3.625rem;
 	padding-right: 3.625rem;
 
@@ -79,26 +79,26 @@
 			border-radius: 0;
 			box-shadow: none;
 			background-color: transparent;
-	
+
 			@include media-breakpoint-up(xxl) {
 				background-color: $white;
 				display: block;
 				min-width: 14rem;
 				top: -1000px;
 				opacity: 0;
-	
+
 				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
 				@include transition(transform .2s ease-out);
 				@include translate3d(0, -20px, 0);
 				@include border-radius(1rem);
 			}
-			
+
 			.nav-item {
 				a {
 					border: none;
 					padding: 0.75rem 1.125rem;
 				}
-				
+
 				&.current,
 				&:hover {
 					background-color: $navbar-light-active-color;
@@ -113,9 +113,9 @@
 		@include media-breakpoint-up(xxl) {
 			&.dropdown:hover {
 				.dropdown-menu {
-					top: auto;				
+					top: auto;
 					opacity: 1;
-	
+
 					@include translate3d(0, 0, 0);
 				}
 			}
@@ -129,19 +129,19 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	.nav-item {			
+	.nav-item {
 		@include media-breakpoint-up(xxl) {
-			padding-right: 1.875rem;	
+			padding-right: 1.875rem;
 		}
 	}
 
 	a.nav-link {
 		color: $topbar-color;
 		font-size: 0.75rem;
-		display: block;	
-		
+		display: block;
+
 		@include media-breakpoint-up(xxl) {
-			padding: 0;		
+			padding: 0;
 		}
 
 		&:hover {
@@ -160,7 +160,7 @@
 		border: 0;
 		top: 1.875rem;
 		left: 0;
-		width: 100%;		
+		width: 100%;
 		margin: 0;
 		border-top: 3px solid $link-hover-color;
 
@@ -175,7 +175,7 @@
 			color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
-			font-size: 0.75rem;				
+			font-size: 0.75rem;
 			padding: 0 0.75rem;
 
 			&:hover {
@@ -202,7 +202,7 @@
 #top-infos {
 	@include media-breakpoint-up(xxl) {
 		margin-right: 2.75rem;
-	}	
+	}
 
 	.phone-number {
 		a {
@@ -226,7 +226,7 @@
 	@include media-breakpoint-down(xxl) {
 		padding: 1rem 0;
 	}
-	
+
 	.nav-link {
 		color: $top-btn-font-color;
 		font-size: $top-btn-font-size;

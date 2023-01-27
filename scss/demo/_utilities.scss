@@ -77,7 +77,7 @@ img {
 
 .arrow-link {
 	position: relative;
-	padding-right: 1.5rem;	
+	padding-right: 1.5rem;
 
 	&:after {
 		content: "";
@@ -90,7 +90,7 @@ img {
 		height: 0.8rem;
 		background-image: url(../images/right-arrow-icon.png);
 		background-repeat: no-repeat;
-		background-size: 100%;		
+		background-size: 100%;
 		opacity: 0;
 		@include transition(opacity 0.3s ease-in-out);
 	}
@@ -182,7 +182,7 @@ img {
 
 .pagination {
 	.page-item {
-		margin-left: 0.5rem;		
+		margin-left: 0.5rem;
 
 		&.prev {
 			.page-link {
@@ -194,7 +194,7 @@ img {
 				&:hover::before {
 					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 				}
-			}			
+			}
 		}
 
 		&.next {

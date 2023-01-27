@@ -56,14 +56,14 @@ html {
 	@media only screen and (max-width: 991) {
 		font-size: 85%;
 	}
-  
+
 	/*--------------------------------------------------------------
 	## Mobile
 	--------------------------------------------------------------*/
 	@media only screen and (max-width: 767px) {
 		font-size: 80%;
 	}
-	
+
 	/*--------------------------------------------------------------
 	## Mini
 	--------------------------------------------------------------*/
@@ -125,7 +125,7 @@ small { font-family: $body-font; }
 ul { margin: 0; }
 ul li { list-style: none; }
 
-i { 
+i {
 	display: inline-block;
 	line-height: inherit;
 }
